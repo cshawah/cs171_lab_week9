@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CS171 - Lab Week 9</title>
+
+		<!-- Load CSS libraries -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- GOOGLE FONTS -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,400italic,300italic' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+	</head>
+
+
+	<h1>Padgett’s Florentine Families</h1>
+	<body style="padding: 5vh">
+	<p>Marriage and Business Ties Among Renaissance Florentine Families</p>
+	<div class="row justify-content-center" style="width: 30%">
+		<div class="col">
+			<select id='sortSelector' class="custom-select align-self-center" style="width: 70%" onchange="categoryChange()">
+				<option value="index" selected>Name</option>
+				<option value="businessSum">Number of business ties</option>
+				<option value="marriageSum">Number of marriages</option>
+				<option value="relationships">Number of all relationships</option>
+				<option value="wealth">Wealth</option>
+				<option value="priorates">Number of seats in civic council (priorates)</option>
+			</select>
+		</div>
+		<div class="row">
+			<div id="matrixLegend">
+		</div>
+	</div>
+	<div class="row justify-content-center">
+		<div id="matrixDiv">
+	</div>
+
+
+
+
+	<!-- embedding JS libraries -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+	<!-- d3 -->
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+
+	<!-- own js files -->
+	<script src="js/matrixVis.js"></script>
+	<script src="js/main.js"></script>
+	</body>
+</html>
